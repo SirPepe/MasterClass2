@@ -1,0 +1,117 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=4.0.3');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before {
+	 -webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+	 		 		 box-sizing: border-box;
+}
+
+html {
+	background-color: #E2E3E5;
+}
+body {
+	display: flex; /* erste Flexumgebung */
+	flex-direction: column;
+	background-color: #71A3AD;
+	max-width: 1000px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.site-title {
+	order: 0; /* erste Flexumgebung */
+}
+
+#App {
+	display: flex; /* zweite  Flexumgebung */
+	flex-direction: row; /* zweite  Flexumgebung */
+	order: 1; /* erste Flexumgebung */
+}
+
+/* Der auslösende Button */
+#Photo {
+	order: 0;	/* zweite Flexumgebung */
+}
+
+#VideoWrapper {
+	order: 1; /* zweite Flexumgebung */
+}
+
+#Gallery {
+	display: flex; /* dritte Flexumgebung */
+	flex-direction: column;/* dritte Flexumgebung */
+	order: 2; /* zweite Flexumgebung */
+	background-color: #588189;
+}
+
+#Startcnt {
+	orer: 2; /* erste Flexumgebung */
+}
+#footer {
+	order: 3; /* erste Flexumgebung */
+}
+
+/* Die Galerie */
+#Gallery div {
+	position: relative;
+	margin-bottom: 12px;
+}
+
+#Gallery button {
+	font-size: 14px;
+	padding: 3px;
+	position: absolute;
+	background-color: #a20000;
+	color: #fff;
+	top: -5px;
+	right: -5px;
+}
+
+
+/* ============ Button */
+button {
+	border: none;
+	background-color: #edeeed;
+	color: #000;
+	padding: 10px 20px;
+	border-radius: 3px;
+	transition: padding 0.3s ease-in;
+}
+button:hover, button:focus {
+	cursor: pointer;
+	padding-right: 40px;
+}
+#Photo {
+	font-size: 20px;
+}
+
+.fa {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* ------- Meine Modifikation ---------- */
+
+.fab:before {
+	content: "";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-camera-retro:before {
+	content: "\f083";
+}
