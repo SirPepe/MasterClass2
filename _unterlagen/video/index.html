@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>DIY HTML5-Videoplayer</title>
+
+<script src="jquery.js"></script>
+
+<video id="video">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+</video>
+
+<p>
+  <button id="Start">Start/Pause</button>
+  <button id="Stumm">Stummschalten</button>
+<p>
+
+<script>
+
+  var $video = $('#video');
+  var video = $video[0];
+
+  function jumpTo(time){
+    var range = video.seekable;
+    for(var i = 0; i < range.length; i++){
+      if(time >= range.start(i) && time < range.end(i)){
+        video.currentTime = time;
+        break;
+      }
+    }
+  }
+
+</script>
