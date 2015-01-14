@@ -1,5 +1,13 @@
-- Allgemeine Dokumentation: https://developer.mozilla.org
--
--
--
+Dokumentationen
 
+- HTML, CSS, JS: https://developer.mozilla.org
+- Schneller Zugriff auf alle wesentlichen Dokumentationen: http://devdocs.io
+
+Flexbox
+
+- A complete guide to Flexbox: http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- Solved by Flexbox: http://philipwalton.github.io/solved-by-flexbox/
+- Flexbugs: https://github.com/philipwalton/flexbugs
+
+
+- Umfangreiche Linkliste zu Frontend: https://github.com/jensgro/Frontenddevelopment-Resources
