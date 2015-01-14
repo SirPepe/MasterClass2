@@ -1,0 +1,33 @@
+html {padding: 20px 0; background-color: #efefef;}
+body {
+	width: 80%; 
+	padding: 40px; 
+	margin: 0 auto; 
+	background: #fff; 
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5); 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 14px;
+}
+
+/* === Some additional styles === */
+
+.header   { background: rgba(0,0,0,0.2);}
+.main     { background: rgba(0,0,0,0.3);}
+.aside-1  { background: rgba(0,0,0,0.4);}
+.aside-2  { background: rgba(0,0,0,0.5);}
+.footer   { background: rgba(0,0,0,0.6);}
+
+.wrapper {
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > *, .inner-wrapper > *  {
+  padding: 10px;
+}
+
+.inner-wrapper {  padding: 0;}
+
+.main { 
+  text-align: left;
+}

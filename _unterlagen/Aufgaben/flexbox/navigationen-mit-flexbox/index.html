@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>Navigationen mit Flexbox</title>
+
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+	</head>
+
+	<body>
+
+		<h1>Navigationen - mit Flexbox gestaltet</h1>
+
+		<h2>Eine x-beliebige, knappe Navigation</h2>
+
+		<div class="info" data-class="nav1">
+			<code>justify-content: space-between;</code>
+		</div>
+		<nav class="nav1">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav2">
+			<code>justify-content: space-around;</code>
+		</div>
+		<nav class="nav2">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav3">
+			<code>justify-content: space-around; flex-direction: row-reverse</code>
+		</div>
+		<nav class="nav3">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav4">
+			<code>display: inline-flex; </code>
+		</div>
+		<nav class="nav4">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav5">
+			<code>justify-content: flex-end; </code>
+		</div>
+		<nav class="nav5">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav6">
+			<code>justify-content: flex-end; </code> und die Listenelemente bekommen einen Aussenabstand nach links
+		</div>
+		<nav class="nav6">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav7">
+			<code>justify-content: center;</code> und einen Aussenabstand von 10px nach links
+		</div>
+		<nav class="nav7">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="nav8">
+			<code>display: inline-flex; flex-direction:column; align-items:baseline; margin-bottom: 5px;</code>
+		</div>
+		<nav class="nav8">
+			<ul class="nolist">
+				<li><a href="#">Startseite</a>
+				</li>
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft &amp; Finanzen</a>
+				</li>
+				<li><a href="#">Kunst &amp; Kultur</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+			</ul>
+		</nav>
+
+		<h2>Die Navigation der FAZ</h2>
+
+		<p>Alle Navigationsitems haben eine margin nach unten, weil die Navigation sehr schnell zweizeilig gerednert wird und so Abstand zwischen den Zeilen entsteht.</p>
+		<div class="info" data-class="faz1">
+			<code>justify-content: space-between; flex-wrap:wrap;</code>
+		</div>
+		<nav class="faz1">
+			<ul class="nolist">
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft</a>
+				</li>
+				<li><a href="#">Finanzen</a>
+				</li>
+				<li><a href="#">Feuilleton</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+				<li><a href="#">Gesellschaft</a>
+				</li>
+				<li><a href="#">Stil</a>
+				</li>
+				<li><a href="#">Technik &amp; Motor</a>
+				</li>
+				<li><a href="#">Wissen</a>
+				</li>
+				<li><a href="#">Reise</a>
+				</li>
+				<li><a href="#">Beruf &amp; Chance</a>
+				</li>
+				<li><a href="#">Rhein-Main</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="faz2">
+			<code>justify-content: space-around; flex-wrap:wrap;</code>
+		</div>
+		<nav class="faz2">
+			<ul class="nolist">
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft</a>
+				</li>
+				<li><a href="#">Finanzen</a>
+				</li>
+				<li><a href="#">Feuilleton</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+				<li><a href="#">Gesellschaft</a>
+				</li>
+				<li><a href="#">Stil</a>
+				</li>
+				<li><a href="#">Technik &amp; Motor</a>
+				</li>
+				<li><a href="#">Wissen</a>
+				</li>
+				<li><a href="#">Reise</a>
+				</li>
+				<li><a href="#">Beruf &amp; Chance</a>
+				</li>
+				<li><a href="#">Rhein-Main</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="info" data-class="faz3">
+			<code>justify-content: space-around; flex-direction: row-reverse; flex-wrap:wrap;</code>
+		</div>
+		<nav class="faz3">
+			<ul class="nolist">
+				<li><a href="#">Politik</a>
+				</li>
+				<li><a href="#">Wirtschaft</a>
+				</li>
+				<li><a href="#">Finanzen</a>
+				</li>
+				<li><a href="#">Feuilleton</a>
+				</li>
+				<li><a href="#">Sport</a>
+				</li>
+				<li><a href="#">Gesellschaft</a>
+				</li>
+				<li><a href="#">Stil</a>
+				</li>
+				<li><a href="#">Technik &amp; Motor</a>
+				</li>
+				<li><a href="#">Wissen</a>
+				</li>
+				<li><a href="#">Reise</a>
+				</li>
+				<li><a href="#">Beruf &amp; Chance</a>
+				</li>
+				<li><a href="#">Rhein-Main</a>
+				</li>
+			</ul>
+		</nav>
+
+	</body>
+
+</html>

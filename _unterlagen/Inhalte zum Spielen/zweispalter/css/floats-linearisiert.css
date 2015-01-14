@@ -1,0 +1,22 @@
+
+@media only screen and (max-width: 720px) {
+  .ym-col1 {
+    float: none;
+    width: auto;
+    display: table-footer-group;
+  }
+
+  .ym-col3 {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .sidebox, .maincnt {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .flexible {
+    margin: 0 auto;
+  }
+}

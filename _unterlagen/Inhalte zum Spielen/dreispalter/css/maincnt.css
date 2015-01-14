@@ -1,0 +1,19 @@
+.maincnt {
+  margin: 20px 0;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #dedede;
+  box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+}
+.maincnt h3 {
+  font-size: 32px;
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #cecece;
+  font-weight: normal;
+  color: #666666;
+}
+.maincnt .flexible {
+  margin-bottom: 20px;
+}

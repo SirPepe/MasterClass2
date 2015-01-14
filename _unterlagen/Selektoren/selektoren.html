@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Rounded Corners</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <style>
+    html{background-color: #efefef;}
+    body {
+    	background-color: #fff;
+    	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        width: 800px;
+    	padding: 40px;
+    	margin: 40px auto;
+    	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    }
+    /* Kopf einblenden */
+    head {display: block;}
+    head style[contenteditable] {
+    	display: block;
+    	font-size: 36px;
+    	color: #a20000;
+    	font-weight: bold;
+        width: 800px;
+    	margin: 20px auto;
+    	}
+  </style>
+  <style type="text/css" media="screen" contenteditable>
+    ul li:nth-child(2) {
+         color: #a20000;
+         font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body>
+    <ul class="fll">
+        <li>Däumelieschen</li>
+        <li>Die Störche</li>
+        <li>Der fliegende Koffer</li>
+        <li>Fliedermütterchen</li>
+        <li>Der Tannenbaum</li>
+        <li>Die Sendung mit der Maus</li>
+        <li>Die unendliche Geschichte</li>
+        <li>Harry Potter</li>
+        <li>Barthimäus</li>
+        <li>Glenkill</li>
+    </ul>​
+    
+    <div class="info">
+        <ol>
+            <li>
+                <h3>jedes ungerade Listenelement</h3>
+                <pre><code>
+ul li:nth-child(odd){}</code></pre>
+            </li>
+
+            <li>
+                <h3>jedes gerade Listenelement</h3>
+                <pre><code>
+ul li:nth-child(even){}</code></pre>
+            </li>
+
+            <li>
+                <h3>jedes dritte Listenelement, beginnend beim Zweiten</h3>
+                <pre><code>
+ul li:nth-child(3n-1){}</code></pre>
+            </li>
+
+            <li>
+                <h3>jedes dritte Listenelement, beginnend beim Ersten</h3>
+                <pre><code>
+ul li:nth-child(3n+1){}</code></pre>
+            </li>
+
+            <li>
+                <h3>Jedes vierte Listenelement, beginnend beim Vierten.</h3>
+                <pre><code>
+ul li:nth-child(4n+4){}</code></pre>
+            </li>
+
+            <li>
+                <h3>Das dritte Element vom Ende her gerechnet.</h3>
+                <pre><code>
+ul li:nth-last-child(3) {}</code></pre>
+            </li>
+
+            <li>
+                <h3>Das zweite Element vom Anfang her gerechnet.</h3>
+                <pre><code>
+ul li:nth-child(2) {}</code></pre>
+            </li>
+            
+            <li>
+                <h3>Alles ausser dem ersten Element</h3>
+                <pre><code>
+ul li:not(:first-child) {}</code></pre>
+            </li>
+        </ol>
+        
+    </div>
+    <div style="clear: both;"></div>
+</body>
+</html>

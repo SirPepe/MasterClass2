@@ -1,0 +1,30 @@
+/* horizontale Navigation */
+.ym-hlist ul {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 0;
+  list-style: none;
+  color: #fff;
+  background: #a20000;
+  box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+}
+.ym-hlist ul li {
+  float: left;
+  margin: 0;
+}
+.ym-hlist ul a, .ym-hlist ul strong {
+  display: block;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.ym-hlist ul a {
+  transition: all 0.5s ease;
+}
+.ym-hlist ul a:hover {
+  background: #550000;
+  text-decoration: underline;
+}

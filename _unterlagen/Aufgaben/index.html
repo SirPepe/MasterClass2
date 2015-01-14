@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übersicht der Testdateien</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style type="text/css" media="screen">
+  /* styling basics */
+  html {
+    padding: 20px 0;
+    background-color: #efefef;
+    font-size: 16px
+  }
+  body {
+    width: 80%;
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    font-family: Verdana, Arial, sans-serif;
+    color: #3e3e3e;
+  }
+
+  /* Counter */
+  body {
+    counter-reset: headline;
+  }
+  h2:before {
+    counter-increment: headline;
+    content: counter(headline) ". ";
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: #030;
+    margin-bottom: 20px;
+  }
+  p, li {
+    font-size: 1.25em;
+  }
+
+  a {
+    color: #a20000;
+  }
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
+  .hinweisbox {
+    border: 1px solid #dedede;
+    margin-bottom: 40px;
+  }
+
+  .hinweisbox p, .hinweisbox ol, .hinweisbox ul, .downloadlink {
+    margin: 40px;
+  }
+  .hinweisbox h2 {
+    background-color: #dedede;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    margin: 0 0 40px 0;
+  }
+
+  .downloadlink {
+    padding: 10px 20px;
+    background-color: #a20000;
+    border: 5px solid #a20000;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .downloadlink:hover, .downloadlink:focus {
+    background-color: #fff;
+    color: #a20000;
+  }
+  .downloadlink:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+
+  code {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #fbab1b;
+  }
+  .flexible {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  /* ------ Hinweisboxen ---------- */
+  .dialog_info {
+    background: #88deff;
+    color: #003d55;
+  }
+  .dialog_error {
+    background: #ee9699;
+    color: #470b0e;
+  }
+  .dialog_warning {
+    background: #fad9a4;
+    color: #674105;
+  }
+  .dialog_success {
+    background: #e6f2cb;
+    color: #55701b;
+  }
+
+  [class^="dialog_"] {
+    margin: 10px 40px;
+    padding: 0.125em;
+  }
+
+  </style>
+</head>
+<body>
+  <h1>Übersicht der Testdateien</h1>
+  <!-- Unterstützende Arbeitsdateien -->
+  <section class="hinweisbox">
+    <h2>Unterstützende Arbeitsdateien (alles ZIP-Archive)</h2>
+    <ol>
+      <li><a href="zip/basics/bilder.zip">viele Bilder zum "Spielen"</a></li>
+      <li><a href="zip/basics/list-of-colors.zip">einige Farben zur Anregung</a></li>
+      <li><a href="zip/basics/blindtexte.zip">Blindtexte</a></li>
+      <li><a href="zip/basics/zweispalter.zip">Zweispalter</a></li>
+      <li><a href="zip/basics/dreispalter.zip">Dreispalter</a></li>
+      <li><a href="zip/basics/jg-functional33551.zip">Iconfont mit Demoseite zum Spielen</a></li>
+    </ol>
+  </section>
+
+  <!-- Einen Bilderstapel gestalten -->
+  <section class="hinweisbox">
+    <h2>Einen Bilderstapel gestalten</h2>
+
+    <p>Eine Liste von Bildern, die Sie bitte übereinanderstapeln. Dabei müssen Sie mit absoluter oder relativer Positionierung arbeiten, sowie mit transform. Schreiben Sie mal Inhalte davor und danach, um herauszufinden, inwiefern die Höhe beeinträchtigt wird. Folgende Schritte benötigen wir, um <a href="zip/bilderstapel.zip">diese Bilderliste</a> interessant zu machen:</p>
+
+    <ol>
+      <li>Entfernen der Listeneigenschaften</li>
+      <li>Einrahmung der Bilder (border, padding, background)</li>
+      <li>Übereinanderstapeln der Bilder</li>
+      <li>Transform nutzen, um die Bilder voneinander zu verschieben, leicht zu drehen</li>
+      <li>Aktionen, die bei bei :hover ausgeführt werden. </li>
+      <li>Kurze Inhalte vor und hinter die Liste schreiben, damit man sieht, welche Auswirkungen diese Layoutidee hat.</li>
+    </ol>
+
+  </section>
+
+  <!--  Beschreibungstext über ein Bild animieren -->
+  <section class="hinweisbox">
+     <h2>Beschreibungstext über ein Bild animieren</h2>
+     <p>Ich habe zwei Bilder mit kurzer Beschreibung und dazugehöriger Überschrift vorbereitet. Die Beschreibungstexte sollen inital versteckt sein. Bei :hover (und :focus) sollen sie hervorkommen. Welche Transition/Animation Sie dafür nutzen, ist Ihnen überlassen. Überschrift und Beschreibungstext sind in der ersten Version zusammen und in der zweiten Version getrennt. Sie sollten deshalb zwei unterschiedliche Animationen erdenken und umsetzen.</p>
+     <a class="downloadlink" href="zip/animierter-beschreibungstext.zip">ZIP herunterladen</a>
+  </section>
+
+  <!--  Komplexe Tabelle im Responsive Webdesign -->
+  <section class="hinweisbox">
+      <h2>Komplexe Tabelle im Responsive Webdesign</h2>
+      <p>Die hier herunterladbare Tabelle hat eine Grundgestaltung durch die <a href="http://yaml.de">im CSS-Framework</a> mitgelieferten Styles. Die Herausforderung besteht nun also darin, <strong>diese komplexe Tabelle responsive zu machen</strong>.</p>
+      <p>Interessante Links zu diesem Thema sind vor allem:</p>
+      <ol>
+        <li><a href="http://bradfrost.github.io/this-is-responsive/patterns.html#tables">gesammelte Patterns von Brad Frost</a></li>
+        <li><a href="https://github.com/filamentgroup/RWD-Table-Patterns">RWD-Table-Patterns</a> der Filamentgroup</li>
+        <li><a href="http://css-tricks.com/responsive-data-table-roundup/">große Übersicht von Chris Coyier</a></li>
+        <li><a href="http://zurb.com/playground/playground/responsive-tables/index.html">JavaScript-getriebene Lösungsvorschläge von ZURB</a> - den Herstellern des Frameworks Foundation</li>
+      </ol>
+
+      <a href="zip/komplexe-tabelle.zip" class="downloadlink">ZIP herunterladen</a>
+
+     </section>
+
+  <!-- Spielen mit Flexbox  -->
+  <section class="hinweisbox">
+    <h2>Spielen mit Flexbox</h2>
+    <p>Im Ordner <strong>flexbox</strong> befindet sich der Unterordner <strong>Flexbox-Sass-Mixin</strong> und darin befindet sich ein praktisches Sass-Mixin, sowie eine dazugehörige Dokumentation in den Formaten Markdown und PDF.</p>
+    <ol>
+      <li><a href="flexbox/einfaches-flexbox-bsp/index.html">ein einfaches Flexbox-Beispiel</a></li>
+      <li><a href="flexbox/navigation-chris-coyier/index.html">eine interaktive Demonstration</a>  der Möglichkeiten von Flexbox bei Navigationen</li>
+      <li><a href="flexbox/dreispalter/index.html">Ein dreispaltiges Layout</a>, das ein wenig Zuwendung gebrauchen könnte, damit es mit Flexbox als Dreispalter funktioniert.</li>
+      <li><a href="flexbox/interactive-flexbox-demo/index.html">interaktive Flexbox-Demo</a></li>
+      <li><a href="flexbox/navigationen-mit-flexbox/index.html">Navigationen mit Flexbox</a></li>
+    </ol>
+
+  </section>
+
+</body>
+</html>
