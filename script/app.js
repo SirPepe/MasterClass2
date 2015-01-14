@@ -37,7 +37,7 @@ require(['jquery', 'q', 'util',
               return $photo.appendTo('#Gallery');
             })
             .fail(
-              handleError('Konnte Foto nicht erstellen')
+              util.handleError('Konnte Foto nicht erstellen')
             );
         });
     });
