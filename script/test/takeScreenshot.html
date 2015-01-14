@@ -61,7 +61,7 @@ require(['takeScreenshot', 'jquery'], function(takeScreenshot, $){
   });
 
   asyncTest('Erstellen eines Screenshots mit Video-Element', function(){
-    $('<video>').attr('src', 'assets/test.webm').on('canplay', function(evt){
+    $('<video>').attr('src', 'assets/test.webm').on('loadeddata', function(evt){
       var promise = takeScreenshot(evt.target);
       testPromise(promise, evt.target.videoWidth, evt.target.videoHeight);
     });
@@ -81,7 +81,7 @@ require(['takeScreenshot', 'jquery'], function(takeScreenshot, $){
   });
 
   asyncTest('Erstellen eines Screenshots mit jQuery-Video-Objekt', function(){
-    $('<video>').attr('src', 'assets/test.webm').on('canplay', function(evt){
+    $('<video>').attr('src', 'assets/test.webm').on('loadeddata', function(evt){
       var promise = takeScreenshot($(evt.target));
       testPromise(promise, evt.target.videoWidth, evt.target.videoHeight);
     });
