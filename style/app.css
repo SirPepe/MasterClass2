@@ -13,48 +13,77 @@
 }
 
 html {
-	background-color: #E2E3E5;
+	font-size: 16px;
 }
 body {
-	display: flex; /* erste Flexumgebung */
-	flex-direction: column;
 	background-color: #71A3AD;
-	max-width: 1000px;
 	padding: 20px;
 	margin: 0 auto;
 }
 
+/* ========= Layout ========= */
+.innerwrap {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.siteheader {
+	margin-bottom: 40px;
+}
+
 .site-title {
-	order: 0; /* erste Flexumgebung */
+	color: #fff;
+	text-align: center;
 }
 
 #App {
-	display: flex; /* zweite  Flexumgebung */
-	flex-direction: row; /* zweite  Flexumgebung */
-	order: 1; /* erste Flexumgebung */
+
+	display: flex; /* erste  Flexumgebung */
+	flex-direction: row; /* erste  Flexumgebung */
 }
 
 /* Der auslösende Button */
 #Photo {
-	order: 0;	/* zweite Flexumgebung */
+	order: 0;	/* erste Flexumgebung */
 }
 
 #VideoWrapper {
-	order: 1; /* zweite Flexumgebung */
+	order: 1; /* erste Flexumgebung */
+	display: flex; /* zweite Flexumgebung A */
+	flex-direction: column;/* zweite Flexumgebung A */
+	position: relative;
+}
+
+video {
+	order: 1; /* zweite Flexumgebung A */
+}
+
+.btncnt {
+	order: 2; /* zweite Flexumgebung A */
 }
 
 #Gallery {
-	display: flex; /* dritte Flexumgebung */
-	flex-direction: column;/* dritte Flexumgebung */
-	order: 2; /* zweite Flexumgebung */
-	background-color: #588189;
+	display: flex; /* zweite Flexumgebung B*/
+	flex-direction: column;/* zweite Flexumgebung B */
+	order: 2; /* erste Flexumgebung */
+	background-color: #fdfdfd;
+	height: 500px;
+	overflow-y: scroll; /* sonst vergrößert sich der Container dauernd. */
+	position: relative;
+	z-index: 10;
+	left: -10px;
+	top: -10px;
+	padding: 10px;
 }
 
-#Startcnt {
-	orer: 2; /* erste Flexumgebung */
+.btncnt {
 }
 #footer {
-	order: 3; /* erste Flexumgebung */
+	margin-top: 30px;
+	background-color: #663;
+	color: #fff;
+	padding: 10px;
 }
 
 /* Die Galerie */
