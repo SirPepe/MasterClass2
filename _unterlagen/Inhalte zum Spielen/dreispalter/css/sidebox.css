@@ -1,0 +1,19 @@
+.sidebox {
+  background-color: #fff;
+  padding: 10px;
+/*  margin: 20px 20px 20px 0;*/
+  margin: 20px 0;
+  border-bottom: 5px solid #fff;
+  transition: all 0.5s ease;
+}
+.sidebox:hover {
+  border-bottom-color: #3498db;
+}
+.sidebox h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #666666;
+}

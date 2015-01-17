@@ -1,0 +1,69 @@
+@import "compass/css3";
+
+$width: 140px;
+$height: 70px;
+
+$mb: 60px; // margin-bottom
+$mr: 20px; // margin-right
+
+$grey1:  #edeeed;
+$grey2:  #6e6e74;
+$grey3:  #7d7d82;
+$grey4:  #393940;
+$grey5:  #585959;
+$grey6:  #99999d;
+$grey7:  #C9C9C9;
+$grey8:  #E2E3E5;
+$grey9:  #3F3F3B;
+$grey10: #555555;
+$grey11: #2A2E2F;
+
+$orange1: #fbab1b;
+$orange2: #f63; 
+
+$brown1:  #a50;
+
+$red1:    #90011f;
+$red2:    #a20000;
+
+$blue1:   #211864;
+$blue2:   #069;
+$blue3:   #09c;
+$blue4:   #71A3AD;
+$blue5:   #588189;
+
+$green1:  #996; 
+$green2:  #663; 
+$green3:  #cc0; 
+$green4:  #cc9;
+
+//  add colour to each piece.
+$colors-list: $grey1 $grey2 $grey3 $grey4 $grey5 $grey6 $grey7 $grey8 $grey9 $grey10 $grey11 $orange1 $orange2 $brown1 $red1 $red2 $blue1 $blue2 $blue3  $blue4 $blue5 $green1 $green2 $green3 $green4;
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+  .color-list li:nth-child(#{$i}) {
+      background-color: $current-color;
+  }
+} 
+
+.color-list {
+  overflow: hidden;
+  &, li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  li {
+    position: relative;
+    float: left;
+    width: $width;
+    height: $height;
+    margin-right:  $mr;
+    margin-bottom: $mb;
+  }
+  span {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+  }
+}

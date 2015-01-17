@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>interactive flexbox-demo</title>
+
+		<meta name="robots" content="noindex">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<img src="http://placehold.it/1200x100&text=headerimage" class="flexible" alt="" />
+			</header>
+			<div class="intro">
+				<h1>Flexbox-demo</h1>
+				<p>This demo shows, how to use flexbox as a layout-tool. Use the control panel in the left most corner to modify the page. You will be informed, what happened on this page.</p>
+			</div>
+
+			<!-- .teaserwrapper -->
+
+			<h2>Primary Teaser</h2>
+			<div class="teaserwrapper three-parts as-row">
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-805015.gif" class="flexible" alt="" />
+						<p>We know you're dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf. Well, I'll say this for him - he's sure of himself. I've had twelve years to think about it. And if I had it to do over again, I would have
+							grabbed the phaser and pointed it at you instead of them. You enjoyed that.</p>
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-c80.gif" class="flexible" alt="" />
+						<p>Latte cortado white a, and, con panna qui froth at frappuccino shop organic. Lungo, caffeine con panna et, white grinder caramelization and flavour. Robusta, white extraction at brewed in turkish sweet beans coffee. Cortado doppio robusta, cappuccino,
+							extra, bar turkish id medium carajillo. Brewed, galão steamed organic blue mountain a cup con panna frappuccino qui sugar aromatic.</p>
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-246655.gif" class="flexible" alt="" />
+						<p>Yeah, you do know how a button works don't you? No, not on clothes. Dear Sir stroke Madam. Fire, exclamation mark. Fire, exclamation mark. Help me, exclamation mark. 123 Carrendon Road. Looking forward to hearing from you. All the best, Maurice
+							Moss. How can you two... Don't Google the question, Moss! </p>
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.teaserwrapper -->
+
+			<h2>Secondary Teaser</h2>
+			<!-- .teaserwrapper -->
+			<div class="teaserwrapper four-parts as-row">
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-2f77c4.gif" class="flexible" alt="" />
+						<p>Carrie, Moss! First scene in Carrie! Oh. Okay When I started Reynholm Industries, I had just two things in my possession: a dream and 6 million pounds. Well that's easy to remember. 0118 999 88199 9119 725! ... 3! No, no there you go, no there you
+							go. I just heard it come on. We don't need no education. Yes you do.</p>
+
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-680.gif" class="flexible" alt="" />
+						<p>Latte cortado white a, and, con panna qui froth at frappuccino shop organic. Lungo, caffeine con panna et, white grinder caramelization and flavour. Robusta, white extraction at brewed in turkish sweet beans coffee. Cortado doppio robusta, cappuccino,
+							extra, bar turkish id medium carajillo. </p>
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-a20000.gif" class="flexible" alt="" />
+						<p>Rump alcatra shankle strip steak pastrami, tenderloin landjaeger fatback picanha turducken pancetta venison doner sausage. Turducken pork loin sirloin beef. Tongue shoulder kevin meatloaf, picanha short ribs chicken doner prosciutto ribeye. Cupim
+							prosciutto beef ribs pork belly, kevin turducken filet mignon venison landjaeger. Pork loin flank pork, chuck pig brisket rump chicken biltong tongue.</p>
+
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+				<div class="teasercnt">
+					<div class="teaser">
+						<img src="images/480x80-d4a56a.gif" class="flexible" alt="" />
+						<p>Yeah, you do know how a button works don't you? No, not on clothes. Dear Sir stroke Madam. Fire, exclamation mark. Fire, exclamation mark. Help me, exclamation mark. 123 Carrendon Road. Looking forward to hearing from you. All the best, Maurice
+							Moss. How can you two... </p>
+						<a href="#" class="goon">read on ...</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.teaserwrapper -->
+
+		</div>
+
+		<div id="control">
+			<h1>Control</h1>
+			<div id="controls">
+
+				<div id="screenwidths">
+					<button data-info="w400" data-screenwidth="w400">400px</button>
+					<button data-info="w620" data-screenwidth="w620">620px</button>
+					<button data-info="w740" data-screenwidth="w740">740px</button>
+					<button data-info="w1000" data-screenwidth="w1000">1000px</button>
+					<button data-info="w1200" data-screenwidth="w1200">1200px</button>
+				</div>
+
+				<div id="flexvariants">
+					<div>
+						<h2>Primary Teaser</h2>
+						<button data-info="col1" class="col-btn1" data-flextarget="three-parts" data-btntarget="row-btn1" data-addclass="as-column"> as column</button>
+						<button data-info="col2" class="col-btn1" data-flextarget="three-parts" data-btntarget="row-btn1" data-addclass="as-column switchposition1">as column - sorted 1</button>
+
+						<button data-info="row1" class="row-btn1 active" data-flextarget="three-parts" data-btntarget="col-btn1" data-addclass="as-row">as row</button>
+						<button data-info="row2" class="row-btn1" data-flextarget="three-parts" data-btntarget="col-btn1" data-addclass="as-row switchposition1">as row - sorted 1</button>
+
+					</div>
+
+					<div>
+						<h2>Secondary Teaser</h2>
+						<button data-info="col3" class="col-btn2" data-flextarget="four-parts" data-btntarget="row-btn2" data-addclass="as-column">as column</button>
+						<button data-info="row3" class="row-btn2 active" data-flextarget="four-parts" data-btntarget="col-btn2" data-addclass="as-row">as row</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<script src='js/jquery-1.11.2.min.js'></script>
+		<script src="js/index.js"></script>
+
+	</body>
+
+</html>

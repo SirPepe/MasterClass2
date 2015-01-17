@@ -16,8 +16,8 @@ html {
 	font-size: 16px;
 }
 body {
-	background-color: #71A3AD;
-	padding: 20px;
+	background-color: #313c42;
+	color: #b4bcc7;
 	margin: 0 auto;
 }
 
@@ -57,32 +57,32 @@ body {
 
 video {
 	order: 1; /* zweite Flexumgebung A */
+	border: 10px solid #000;
 }
 
 .btncnt {
 	order: 2; /* zweite Flexumgebung A */
+	margin-top: 20px;
 }
 
 #Gallery {
 	display: flex; /* zweite Flexumgebung B*/
 	flex-direction: column;/* zweite Flexumgebung B */
 	order: 2; /* erste Flexumgebung */
-	background-color: #fdfdfd;
-	height: 500px;
+
 	overflow-y: scroll; /* sonst vergrößert sich der Container dauernd. */
-	position: relative;
-	z-index: 10;
-	left: -10px;
-	top: -10px;
+	height: 500px;
+
+	background-color: #000;
 	padding: 10px;
+	margin-left: 20px;
 }
 
-.btncnt {
-}
+
 #footer {
 	margin-top: 30px;
-	background-color: #663;
-	color: #fff;
+	background-color: #46545d;
+	color: #b4bcc7;
 	padding: 10px;
 }
 
@@ -90,6 +90,57 @@ video {
 #Gallery div {
 	position: relative;
 	margin-bottom: 12px;
+}
+
+
+/* ============ Buttons */
+button {
+	border: none;
+	background-color: #f7a248;
+	border: 5px solid #f7a248;
+	color: #000;
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+
+button:hover, button:focus {
+	cursor: pointer;
+}
+
+#Start {
+	transition: all 0.3s ease-in;
+}
+
+#Start:hover, #Start:focus {
+	background-color: #a20000;
+	color: #fff;
+}
+#Photo {
+	background-color: #fff;
+}
+
+/* ------- Meine Modifikation der FontAwesome-Regeln ---------- */
+.fab:before {
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.3s ease-in;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-camera-retro:before {
+	content: "\f083";
+}
+
+.fab:hover:before, .fab:focus:before {
+	/* margin-right: 30px; */
+	transform: scale(2);
+	color: #a20000;
 }
 
 #Gallery button {
@@ -100,47 +151,5 @@ video {
 	color: #fff;
 	top: -5px;
 	right: -5px;
-}
-
-
-/* ============ Button */
-button {
 	border: none;
-	background-color: #edeeed;
-	color: #000;
-	padding: 10px 20px;
-	border-radius: 3px;
-	transition: padding 0.3s ease-in;
-}
-button:hover, button:focus {
-	cursor: pointer;
-	padding-right: 40px;
-}
-#Photo {
-	font-size: 20px;
-}
-
-.fa {
-	display: inline-block;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-/* ------- Meine Modifikation ---------- */
-
-.fab:before {
-	content: "";
-	display: inline-block;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-.fa-camera-retro:before {
-	content: "\f083";
 }

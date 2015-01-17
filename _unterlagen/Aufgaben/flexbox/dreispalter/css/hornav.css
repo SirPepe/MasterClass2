@@ -1,0 +1,65 @@
+/* horizontale Navigation */
+.mainnav ul, .mainnav li {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+
+  color: #fff;
+  background: #a20000;
+}
+
+.mainnav ul {
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainnav a, .mainnav strong {
+  display: block;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.mainnav a {
+  transition: all 0.5s ease;
+}
+.mainnav a:hover, .mainnav a:focus {
+  background: #550000;
+  text-decoration: underline;
+}
+
+/* ========= Float-Version =========== */
+/*
+.mainnav ul {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 0;
+  list-style: none;
+  color: #fff;
+  background: #a20000;
+}
+
+.mainnav ul li {
+  float: left;
+  margin: 0;
+}
+.mainnav a, .mainnav strong {
+  display: block;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.mainnav a {
+  transition: all 0.5s ease;
+}
+.mainnav a:hover {
+  background: #550000;
+  text-decoration: underline;
+}
+*/
