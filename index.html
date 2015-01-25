@@ -9,16 +9,28 @@
 	</head>
 
 	<body>
+    <header class="siteheader">
+      <h1 class="site-title innerwrap">Touch-a-touch-me!</h1>
+    </header>
 
 
-	<div id="App" class="innerwrap">
 
-		<div id="VideoWrapper"></div>
+		<div id="App" class="innerwrap">
+      <div id="VideoWrapper">
 
-		<button id="Start">Kamera starten</button>
-		<button id="Photo" class="fab fa-camera-retro" disabled>Foto aufnehmen</button>
+        <div class="btncnt">
+          <button id="Start">Kamera starten</button>
+          <button id="Photo" class="fab fa-camera-retro" disabled>Foto aufnehmen</button>
+        </div>
 
-		<div id="Gallery"></div>
+      </div>
+			<div id="Gallery"></div>
+
+		</div>
+
+		<footer id="footer">
+			<div class="innerwrap">&copy; by Buddha und Bärchen, 2015</div>
+		</footer>
 
 		<script src="script/lib/shims.js"></script>
 		<script src="script/lib/requireconfig.js"></script>
